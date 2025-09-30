@@ -1,0 +1,21 @@
+.container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid rgb(170, 169, 169) 1px;
+}
+.square{
+    border: .5px solid black;
+    box-sizing: border-box;
+    background-color: rgb(241, 241, 241);
+    transition: all 0.3s ease;
+}
+body{
+    background-color: gray;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
