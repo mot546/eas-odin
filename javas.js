@@ -12,7 +12,14 @@ for(let i=0;squares*squares > i; i++){
     square.className = "square";
     square.style.width = `${widthHeight}px`;
     square.style.height = `${widthHeight}px`;
-
+    square.classList.add(`s${i}`);
     container.appendChild(square);
 }
  
+for(i = 0; squares*squares > i; i++){
+    let thisOne = document.querySelector(`.s${i}`);
+    thisOne.addEventListener("mouseover", function(){
+        thisOne.classList.add("over");
+    });
+}
+    
